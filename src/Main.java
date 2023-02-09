@@ -28,13 +28,26 @@ public class Main {
         byte aS = 27;
         byte eA = 30;
         float paperSheets = 480 / (lP + aS + eA);
-        System.out.println("На каждого ученика рассчитано "+ paperSheets + " листов бумаги");
+        System.out.println("На каждого ученика рассчитано " + paperSheets + " листов бумаги");
 
     //4
         byte bottlesPer2Min = 16;
         int bottlesPer20Min = bottlesPer2Min / 2 * 20; // или * 10, с шортом не считает
         int bottlesPer24H = bottlesPer2Min / 2 * 60 * 24;
         float bottlesPer3D = bottlesPer24H * 2.5F; //если без перерыва, то 2 суток и 1 день, а не 3 дня
-        //
+        int bottlesPer1M = bottlesPer24H * 30;
+        System.out.println("За 20 минут " + bottlesPer20Min + " бутылок");
+        System.out.println("За сутки " + bottlesPer24H + " бутылок");
+        System.out.println("За 3 дня " + bottlesPer3D + " бутылок");
+        System.out.println("За месяц " + bottlesPer1M + " бутылок");
+
+    //5
+        byte paintCans = 120;
+        //На один класс уходит 2 банки белой и 4 банки коричневой краски
+        int cabinet = paintCans / 6;
+        int white = cabinet * 2;
+        int brown = cabinet * 4;
+        System.out.println("В школе, где " + cabinet + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
+
     }
 }
