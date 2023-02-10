@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Значение переменной L с типом long равно " + L);
         System.out.println("Значение переменной F с типом float равно " + F);
         System.out.println("Значение переменной D с типом double равно " + D);
+        System.out.println(" ");
 
     //2
         byte a = 67;
@@ -24,11 +25,12 @@ public class Main {
         double f = 2.786;
 
     //3
-        byte lP = 23;
+        byte lP = 23;  //Инициалы преподов
         byte aS = 27;
         byte eA = 30;
-        float paperSheets = 480 / (lP + aS + eA);
+        float paperSheets = 480 / (lP + aS + eA);  // а вдруг кому-то попадет пол листа?
         System.out.println("На каждого ученика рассчитано " + paperSheets + " листов бумаги");
+        System.out.println(" ");
 
     //4
         byte bottlesPer2Min = 16;
@@ -40,6 +42,7 @@ public class Main {
         System.out.println("За сутки " + bottlesPer24H + " бутылок");
         System.out.println("За 3 дня " + bottlesPer3D + " бутылок");
         System.out.println("За месяц " + bottlesPer1M + " бутылок");
+        System.out.println(" ");
 
     //5
         byte paintCans = 120;
@@ -48,6 +51,37 @@ public class Main {
         int white = cabinet * 2;
         int brown = cabinet * 4;
         System.out.println("В школе, где " + cabinet + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
+        System.out.println(" ");
+
+    //6
+        byte bananana = 80;
+        byte milk = 105;
+        byte iceCream = 100;
+        byte drEggman = 70;
+        float breakfast = 5*bananana + 2*milk + 2*iceCream + 4*drEggman;
+        System.out.println("Завтрак победителя - " + breakfast + "г, или "+ breakfast/1000 + "кг.");
+        System.out.println(" ");
+
+    //7
+        short days250 = 7000/250;
+        short days500 = 7000/500;
+        int daysAvg = (days500 + days250)/2;
+        System.out.println("От " + days500 + " дней, до " + days250 + " дней. В среднем - " + daysAvg);
+        System.out.println(" ");
+
+    //8
+            int MashaCurrent = 67760;
+            int DenCurrent  = 83690;
+            int KrisCurrent = 76230;
+            float MashaNew = MashaCurrent * 1.1F;
+            float KrisNew = KrisCurrent * 1.1F;
+            float DenNew = DenCurrent * 1.1F;
+            float MashaDelta = MashaNew - MashaCurrent;
+            float DenDelta = DenNew - DenCurrent;
+            float KrisDelta = KrisNew - KrisCurrent;
+            System.out.println("Маша теперь получает " + MashaNew + ". Надбавка - " + MashaDelta);
+            System.out.println("Денис теперь получает " + DenNew + ". Надбавка - " + DenDelta);
+            System.out.println("Кристина теперь получает " + KrisNew + ". Надбавка - " + KrisDelta);
 
     }
 }
