@@ -10,7 +10,7 @@ public class Main {
         double D = 8.8005553535;
         System.out.println("Значение переменной B с типом byte равно " + B);
         System.out.println("Значение переменной S с типом short равно " + S);
-        System.out.println("Значение переменной I с типом bint равно " + I);
+        System.out.println("Значение переменной I с типом int равно " + I);
         System.out.println("Значение переменной L с типом long равно " + L);
         System.out.println("Значение переменной F с типом float равно " + F);
         System.out.println("Значение переменной D с типом double равно " + D);
@@ -65,7 +65,7 @@ public class Main {
     //7
         short days250 = 7000/250;
         short days500 = 7000/500;
-        int daysAvg = (days500 + days250)/2;
+        float daysAvg = (days500 + days250)/2;
         System.out.println("От " + days500 + " дней, до " + days250 + " дней. В среднем - " + daysAvg);
         System.out.println(" ");
 
@@ -76,12 +76,12 @@ public class Main {
             float MashaNew = MashaCurrent * 1.1F;
             float KrisNew = KrisCurrent * 1.1F;
             float DenNew = DenCurrent * 1.1F;
-            float MashaDelta = MashaNew - MashaCurrent;
-            float DenDelta = DenNew - DenCurrent;
-            float KrisDelta = KrisNew - KrisCurrent;
-            System.out.println("Маша теперь получает " + MashaNew + ". Надбавка - " + MashaDelta);
-            System.out.println("Денис теперь получает " + DenNew + ". Надбавка - " + DenDelta);
-            System.out.println("Кристина теперь получает " + KrisNew + ". Надбавка - " + KrisDelta);
+            float MashaDelta = (MashaNew - MashaCurrent)*12;
+            float DenDelta = (DenNew - DenCurrent)*12;
+            float KrisDelta = (KrisNew - KrisCurrent)*12;
+            System.out.println("Маша теперь получает " + MashaNew + ". За год прибавка - " + MashaDelta);
+            System.out.println("Денис теперь получает " + DenNew + ". За год прибавка - " + DenDelta);
+            System.out.println("Кристина теперь получает " + KrisNew + ". За год прибавка - " + KrisDelta);
 
     }
 }
